@@ -5,14 +5,14 @@ from . import input
 def on_pressed_keys(pressed_keys, world):
     x, y = 0, 0
     if pressed_keys[pygame.K_LEFT]:
-        x -= 5
+        x -= 1
     if pressed_keys[pygame.K_RIGHT]:
-        x += 5
+        x += 1
     if pressed_keys[pygame.K_UP]:
-        y -= 5
+        y -= 1
     if pressed_keys[pygame.K_DOWN]:
-        y += 5
-    world.player.velocity = (x, y)
+        y += 1
+    world.player.movement_input = (x, y)
 
 
 input.subscribers.append({

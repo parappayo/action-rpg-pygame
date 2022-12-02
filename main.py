@@ -4,9 +4,10 @@ import pygame
 from sim.world import World
 import sys
 
+fps = 80
+ms_per_frame = 1000 / fps
 
 if __name__ == '__main__':
-    ms_per_frame = 20  # 50 fps
     surface = game.render.create_surface("Action RPG")
     world = World()
 
@@ -22,6 +23,7 @@ if __name__ == '__main__':
             elapsed = pygame.time.get_ticks() - last_update
 
         last_update = pygame.time.get_ticks()
+        print("fps: " + str(1000.0 / elapsed))
 
         while elapsed >= ms_per_frame:
             elapsed -= ms_per_frame
