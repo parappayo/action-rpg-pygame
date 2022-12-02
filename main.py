@@ -14,5 +14,6 @@ if __name__ == '__main__':
         game.input.handle_events(world)
         if world.quit_flag:
             sys.exit()
+        world.tick()
         game.render.draw_frame(surface, world)
         time.sleep(0.001)

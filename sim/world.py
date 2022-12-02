@@ -7,3 +7,6 @@ class World:
         self.quit_flag = False  # set to True if the player tries to quit
 
         self.player = player.Player()
+
+    def tick(self):
+        self.player.tick()
