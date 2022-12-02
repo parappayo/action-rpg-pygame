@@ -15,6 +15,17 @@ def on_pressed_keys(pressed_keys, world):
     world.player.movement_input = (x, y)
 
 
+def on_joysticks(joysticks, world):
+    if len(joysticks) < 1:
+        return
+    # joy1 = joysticks[0]
+    # print("name: " + joy1.get_name())
+    # print("numaxes: " + str(joy1.get_numaxes()))
+    # for i in range(joy1.get_numaxes()):
+    #     print(joy1.get_axis(i))
+
+
 input.subscribers.append({
-        "pressed_keys": on_pressed_keys
+        "pressed_keys": on_pressed_keys,
+        "joysticks": on_joysticks,
     })

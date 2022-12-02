@@ -23,7 +23,7 @@ if __name__ == '__main__':
             elapsed = pygame.time.get_ticks() - last_update
 
         last_update = pygame.time.get_ticks()
-        print("fps: " + str(1000.0 / elapsed))
+        # print("fps: " + str(1000.0 / elapsed))
 
         while elapsed >= ms_per_frame:
             elapsed -= ms_per_frame
