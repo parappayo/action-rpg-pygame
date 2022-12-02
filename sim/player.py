@@ -18,7 +18,6 @@ class Player:
             self.movement_input[0] * self.speed,
             self.movement_input[1] * self.speed)
 
-
     def tick(self):
         velocity = self.velocity()
         self.position = (
