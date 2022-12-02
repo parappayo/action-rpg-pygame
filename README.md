@@ -5,6 +5,10 @@ This is a skunkworks style sandbox repo to prove out some action RPG type gamepl
 
 It uses [Python 3](https://www.python.org/) and [PyGame](https://www.pygame.org/news) for things like graphics, sound, and input. It borrows a few implementation ideas from [planarity-py](https://github.com/parappayo/planarity-py).
 
+## Acknowledgements
+
+Sprite graphics are taken from the [Dungeon Crawl Stone Soup tileset](https://opengameart.org/content/dungeon-crawl-32x32-tiles) found on OpenGameArt.org.
+
 Genre-wise this project is inspired by [The Legend of Zelda](https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)), [Diablo II](https://en.wikipedia.org/wiki/Diablo_II), [Secret of Mana](https://en.wikipedia.org/wiki/Secret_of_Mana), and [Vampire Survivors](https://en.wikipedia.org/wiki/Vampire_Survivors). Ideally this repo will provide a toolset for building games like these.
 
 ## Setup
@@ -21,6 +25,7 @@ To launch the game,
 * `game/` is a package containing game-specific "engine" code
   * stuff like "draw player" and "get input events" goes here
   * depends on PyGame and sim
+* `resources/` is where files like sprite textures and sound files go
 * `sim/` is a package containing abstract game world code
   * stuff like "update enemy positions" and "check attack collisions" goes here
   * should only depend on standard Python libs
