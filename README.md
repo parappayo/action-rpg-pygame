@@ -40,23 +40,25 @@ Accomplished so far,
 * sprite rendering
 * joystick input
 
-Yet to be accomplished,
+Up next,
 
-* animated sprites
-* normalized joystick input
-* multiple players
-* configurable input bindings
-* texture atlas support, maybe support for [TexturePacker](https://www.codeandweb.com/texturepacker)
-* tile-based background layer
-* integration with [Tiled](https://www.mapeditor.org/)
 * two player same-screen gameplay
 * simple enemy spawners
 * radial hit detection logic
+* normalized joystick input
+
+Yet to be accomplished,
+
+* animated sprites
+* texture atlas support, maybe support for [TexturePacker](https://www.codeandweb.com/texturepacker)
+* tile-based background layer
+* integration with [Tiled](https://www.mapeditor.org/)
 * procedural level generation
 * a few character classes
-* simple equipment system
+* equipment system
 * persist game state to file
 * UI front-end flow (menu screen, load game)
+* configurable input bindings (options)
 
 ## References
 
