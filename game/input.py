@@ -31,3 +31,18 @@ def handle_events(world):
             event_handlers["pressed_keys"](pressed_keys, world)
         if "joysticks" in event_handlers:
             event_handlers["joysticks"](joysticks, world)
+
+
+def debug_print_joy(joy):
+    print("name: " + joy.get_name())
+    print("numaxes: " + str(joy.get_numaxes()))
+    for i in range(joy.get_numaxes()):
+        print(joy.get_axis(i))
+
+
+def apply_dead_zone(axis):
+    if 0 < axis and axis < 0.12:
+        return 0
+    if -0.12 < axis and axis < 0:
+        return 0
+    return axis

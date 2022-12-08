@@ -8,5 +8,5 @@ class World:
 
         self.player = player.Player()
 
-    def tick(self):
-        self.player.tick()
+    def tick(self, elapsed):
+        self.player.tick(elapsed)

@@ -37,10 +37,15 @@ To launch the game,
 Accomplished so far,
 
 * simple game loop
+* sprite rendering
+* joystick input
 
 Yet to be accomplished,
 
-* sprite rendering
+* animated sprites
+* normalized joystick input
+* multiple players
+* configurable input bindings
 * texture atlas support, maybe support for [TexturePacker](https://www.codeandweb.com/texturepacker)
 * tile-based background layer
 * integration with [Tiled](https://www.mapeditor.org/)
