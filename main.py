@@ -4,8 +4,8 @@ import pygame
 from sim.world import World
 import sys
 
-
-# fixed fps makes the world update more deterministic, but graphics more jittery
+# fixed fps makes the world update more deterministic,
+# but graphics more jittery
 use_fixed_fps = False
 ms_per_frame = 1000 / 80
 
@@ -35,6 +35,9 @@ def fixed_fps_game_loop(surface, world):
 def game_loop(surface, world):
     last_update = pygame.time.get_ticks()
     elapsed = 0
+
+    last_update = pygame.time.get_ticks()
+    elapsed = ms_per_frame
 
     while True:
         game.input.handle_events(world)
